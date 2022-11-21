@@ -12,12 +12,11 @@ else
 {
     int count = 0;
     int original_num = num;
-    while (num!= 0)
+    while (num != 0)
     {
-        num=num/10;
+        num /= 10;
         count++;
     }
-    result = original_num/Convert.ToInt32(Math.Pow(10,count-3))%10;
-    Console.WriteLine(count);
+    result = original_num / Convert.ToInt32(Math.Pow(10, count-3)) % 10;
     Console.WriteLine(result);
 }
